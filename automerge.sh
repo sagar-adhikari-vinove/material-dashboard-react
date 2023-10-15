@@ -2,7 +2,7 @@
 
 # Define the branches
 dev_branch="dev"
-master_branch="master"
+master_branch="staging"
 
 # Navigate to your Git repository directory
 #cd /path/to/your/repo
