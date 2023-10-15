@@ -16,6 +16,9 @@ git pull
 # Check out the dev branch
 git checkout $dev_branch
 
+if ! git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null; then
+  git push --set-upstream origin $dev_branch
+fi
 # Merge the dev branch into the master branch
 git merge $master_branch
 
